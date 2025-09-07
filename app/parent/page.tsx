@@ -78,7 +78,10 @@ export default function KidHomePage() {
       {/* 메인 컨텐츠 영역 */}
       <div className="flex-1 flex flex-col px-6 pt-4 rounded-t-3xl">
         {/* 혈당건강지수 카드 */}
-        <div className="bg-slate-700 rounded-2xl p-6 text-white">
+        <div 
+          className="bg-slate-700 rounded-2xl p-6 text-white cursor-pointer hover:bg-slate-600 transition-colors"
+          onClick={() => router.push('/parent/report')}
+        >
           <div className="flex justify-between items-center mb-2">
             <h3 className="text-lg font-medium">자녀의 혈당건강지수</h3>
             <button className="bg-white bg-opacity-20 text-[#8E8E8E] px-3 py-1 rounded-full text-sm flex items-center gap-1">
